@@ -1,0 +1,13 @@
+---
+
+- name: mount devises
+  mount:
+    name: '{{ item.name }}'
+    src: '{{ item.src }}'
+    fstype: '{{ item.fstype }}'
+    opts: '{{ item.opts }}'
+    state: '{{ item.state }}'
+    dump: '{{ item.dump }}'
+    passno: '{{ item.passno }}'
+    fstab: '{{ item.fstab | default("/etc/fstab") }}'
+  with_items: mount_devises

@@ -23,7 +23,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: MichaelRigart.mount }
+         - { role: MichaelRigart.mount, sudo: Yes }
 
 License
 -------

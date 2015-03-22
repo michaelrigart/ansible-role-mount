@@ -1,6 +1,6 @@
 ---
 
-- name: mount devices
+- name: ensure devices mounted
   mount:
     name: '{{ item.name }}'
     src: '{{ item.src }}'

@@ -1,14 +1,14 @@
 Ansible Mount Role
 ==================
 
-An ansible role for mounting devises.
+An ansible role for mounting devices.
 
 Role Variables
 --------------
 
 ```yaml
-# list of dictionaries holding all devises that need to be mounted.
-mount_devises:
+# list of dictionaries holding all devices that need to be mounted.
+mount_devices:
   - name: /
     src: /dev/mapper/root
     fstype: ext4

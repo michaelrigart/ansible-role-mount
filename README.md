@@ -1,5 +1,6 @@
 Ansible Mount Role
 ==================
+[![Build Status](https://travis-ci.org/michaelrigart/ansible-role-mount.svg)](https://travis-ci.org/michaelrigart/ansible-role-mount)
 
 An ansible role for mounting devises.
 

@@ -1,6 +1,6 @@
 ---
 
-- name: mount devises
+- name: ensure devices mounted
   mount:
     name: '{{ item.name }}'
     src: '{{ item.src }}'
@@ -10,4 +10,4 @@
     dump: '{{ item.dump }}'
     passno: '{{ item.passno }}'
     fstab: '{{ item.fstab | default("/etc/fstab") }}'
-  with_items: mount_devises
+  with_items: mount_devices

@@ -22,9 +22,11 @@ mount_devices:
 Example Playbook
 ----------------
 
-    - hosts: servers
-      roles:
-         - { role: MichaelRigart.mount, sudo: Yes }
+```yaml
+- hosts: servers
+  roles:
+    - { role: MichaelRigart.mount, sudo: Yes }
+```
 
 License
 -------

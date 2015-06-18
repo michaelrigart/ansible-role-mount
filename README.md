@@ -1,6 +1,6 @@
 Ansible Mount Role
 ==================
-[![Build Status](https://travis-ci.org/michaelrigart/ansible-role-mount.svg)](https://travis-ci.org/michaelrigart/ansible-role-mount)
+[![Build Status](https://semaphoreci.com/api/v1/projects/1a67bd32-ca28-4baa-afa3-6329dae67e85/459474/badge.svg)](https://semaphoreci.com/michaelrigart/ansible-role-mount) [![Build Status](https://travis-ci.org/michaelrigart/ansible-role-mount.svg)](https://travis-ci.org/michaelrigart/ansible-role-mount)
 
 An ansible role for mounting devices.
 

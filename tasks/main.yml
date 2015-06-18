@@ -5,9 +5,9 @@
     name: '{{ item.name }}'
     src: '{{ item.src }}'
     fstype: '{{ item.fstype }}'
-    opts: '{{ item.opts }}'
-    state: '{{ item.state }}'
-    dump: '{{ item.dump }}'
-    passno: '{{ item.passno }}'
+    opts: '{{ item.opts  | default("defaults") }}'
+    state: '{{ item.state  | default("mounted")  }}'
+    dump: '{{ item.dump | default("0") }}'
+    passno: '{{ item.passno | default("0") }}'
     fstab: '{{ item.fstab | default("/etc/fstab") }}'
   with_items: mount_devices

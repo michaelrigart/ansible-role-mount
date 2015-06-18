@@ -10,13 +10,14 @@ Role Variables
 ```yaml
 # list of dictionaries holding all devices that need to be mounted.
 mount_devices:
-  - name: /
-    src: /dev/mapper/root
-    fstype: ext4
-    opts: noatime,errors=remount-ro
-    state: mounted
-    dump: 0
-    passno: 1
+  - name: /                         # NO default
+    src: /dev/mapper/root           # NO default
+    fstype: ext4                    # NO default
+    opts: noatime,errors=remount-ro # default: "defaults"
+    state: present                  # default: "mounted"
+    dump: 0                         # default: "0"
+    passno: 1                       # default: "0"
+    fstab: /etc/fstab               # default: "/etc/fstab"
 ```
 
 Example Playbook

@@ -10,4 +10,4 @@
     dump: '{{ item.dump | default("0") }}'
     passno: '{{ item.passno | default("0") }}'
     fstab: '{{ item.fstab | default("/etc/fstab") }}'
-  with_items: mount_devices
+  with_items: "{{ mount_devices }}"
